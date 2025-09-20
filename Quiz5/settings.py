@@ -112,11 +112,16 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Asia/Manila'  # Changed from UTC to Asia/Manila
+TIME_ZONE = 'Asia/Manila'
+USE_TZ = True
+
+LOGIN_URL = '/auth/signin/'
+LOGIN_REDIRECT_URL = '/exam/'
+LOGOUT_REDIRECT_URL = '/auth/signin/'
+
 
 USE_I18N = True
 
-USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
